@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -7,8 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
+  @Input() columns: any[];
   items: any[] = [{dupa: 'dupa', name: 'dupa'}];
-  columns: any[] = [{field: 'dupa', header: 'dupa'}];
+  rowData = {dupa: 'dupa2'};
 
   constructor() {
   }

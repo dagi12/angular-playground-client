@@ -3,12 +3,14 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {DataTableModule, SharedModule} from 'primeng/primeng';
-import { TableComponent } from './table/table.component';
+import {TableComponent} from './table/table.component';
+import {NewJsonPipe} from './new-json.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    NewJsonPipe
   ],
   imports: [
     BrowserModule,

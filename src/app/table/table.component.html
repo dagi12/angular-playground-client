@@ -1,4 +1,9 @@
 <p-dataTable [value]="items">
-  <p-column *ngFor="let col of columns" [field]="col.field" [header]="col.header"></p-column>
-  <ng-content></ng-content>
+  <p-column *ngFor="let col of columns" [field]="col.field" [header]="col.header">
+    <!--<ng-template *ngIf="col.date" let-item="rowData" pTemplate type="body">-->
+    <!--{{item[col.field]}}-->
+    <!--</ng-template>-->
+    <!--<template [ngTemplateOutlet]="columns[0].template" [ngOutletContext]="{item: rowData}" pTemplate type="body"></template>-->
+  </p-column>
 </p-dataTable>
+
