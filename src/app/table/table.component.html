@@ -1,0 +1,4 @@
+<p-dataTable [value]="items">
+  <p-column *ngFor="let col of columns" [field]="col.field" [header]="col.header"></p-column>
+  <ng-content></ng-content>
+</p-dataTable>
