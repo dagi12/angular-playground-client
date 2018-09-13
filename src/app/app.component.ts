@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,19 +6,12 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  @ViewChild('dupaTemplate') dupaTemplate: ElementRef;
-  columns: any[];
+  ngOnInit(): void {
+  }
 
 
   constructor() {
   }
 
-  ngOnInit(): void {
-    this.columns = [{
-      field: 'dupa',
-      header: 'dupa',
-      template: this.dupaTemplate
-    }];
-  }
 
 }
