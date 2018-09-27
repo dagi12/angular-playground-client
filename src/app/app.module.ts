@@ -11,6 +11,7 @@ import {Test1Component} from './test1/test1.component';
 import {Test2Component} from './test2/test2.component';
 import {TestInputComponent} from './test2/test-input/test-input.component';
 import {FormsModule} from '@angular/forms';
+import {DropzoneModule} from 'ngx-dropzone-wrapper';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     DataTableModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    DropzoneModule
   ],
   providers: [],
   bootstrap: [AppComponent]

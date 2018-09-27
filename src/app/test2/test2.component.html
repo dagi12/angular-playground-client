@@ -1,2 +1,4 @@
 <app-test-input [(ngModel)]="value"></app-test-input>
 <p>Outside: {{value}}}</p>
+<dropzone [config]="config" class="dropzone dropzone-container"
+          [message]="'Click or drag images here to upload'"></dropzone>
